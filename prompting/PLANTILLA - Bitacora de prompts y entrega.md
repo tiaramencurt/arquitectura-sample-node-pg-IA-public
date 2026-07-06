@@ -7,10 +7,10 @@
 
 ## Datos
 
-- **Alumno/a:** ___
+- **Alumno/a:** Maica y Mica
 - **Ejercicio:** N° ___ — ___________________
-- **Fecha:** ___
-- **Modelo de IA usado:** (ej: ChatGPT, Claude, Gemini, Copilot) ___
+- **Fecha:** 06/07/2026
+- **Modelo de IA usado:** (ej: ChatGPT, Claude, Gemini, Copilot) Gemini
 
 ---
 
