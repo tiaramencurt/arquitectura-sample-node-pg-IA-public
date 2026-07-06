@@ -1,3 +1,4 @@
+// [YO] Corrección de semántica: se cambió rowsAffected por newId en createAsync ya que retorna el ID generado
 import MateriasRepository from '../repositories/materias-repository.js';
 
 export default class MateriasService {
@@ -20,19 +21,19 @@ export default class MateriasService {
 
     createAsync = async (entity) => {
         console.log(`MateriasService.createAsync(${JSON.stringify(entity)})`);
-        const  newId= await this.MateriasRepository.createAsync(entity);
+        const newId = await this.MateriasRepository.createAsync(entity);
         return newId;
     }
 
     updateAsync = async (entity) => {
         console.log(`MateriasService.updateAsync(${JSON.stringify(entity)})`);
-        const newId = await this.MateriasRepository.updateAsync(entity);
-        return newId;
+        const rowsAffected = await this.MateriasRepository.updateAsync(entity);
+        return rowsAffected;
     }
     
     deleteByIdAsync = async (id) => {
         console.log(`MateriasService.deleteByIdAsync(${id})`);
-        const newId = await this.MateriasRepository.deleteByIdAsync(id);
-        return newId;
+        const rowsAffected = await this.MateriasRepository.deleteByIdAsync(id);
+        return rowsAffected;
     }
 }
